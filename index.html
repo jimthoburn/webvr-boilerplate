@@ -1,17 +1,22 @@
-<!doctype html>
-<html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE html>
 
+<html lang="en">
+<head>
+<title>Web VR boilerplate</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <style>
-    html, body {
-      height: 100%;
-    }
     body {
-      background: black;
-      margin: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      color: #fff;
+      margin: 0px;
       padding: 0;
+      overflow: hidden;
     }
 
     /* SHIM: Hide the link to purchase a Google cardboard viewer */
@@ -19,16 +24,10 @@
       display: none;
     }
 
-/* TEMPORARY */
+    /* SHIM: Prevent the buttons from taking up space */
+    /* A better solution would be to position the buttons instead of the images inside them. */
     a, button {
       position: absolute;
-    }
-
-    .webvr-ui-button {
-      min-width: 0 !important;
-    }
-    .webvr-ui-title {
-      display: none !important;
     }
   </style>
 </head>
